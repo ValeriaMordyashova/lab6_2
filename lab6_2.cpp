@@ -2,19 +2,7 @@
 #include <vector>
 
 // Абстрактный базовый класс Ингредиент
-class Ingredient {
-public:
-    virtual std::string getName() const = 0;
-    virtual double getCaloriesPer100g() const = 0;
-    virtual double getQuantity() const = 0;
-    virtual void accept(class Visitor& visitor) = 0;
-};
-
-// Конкретный класс Продукт
-class Product : public Ingredient {
-private:
-    std::string name;
-    double caloriesPer100g;
+   double caloriesPer100g;
     double quantity;
 
 public:
